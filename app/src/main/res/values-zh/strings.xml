@@ -11,5 +11,5 @@
     <string name="video_size">文件大小:</string>
     <string name="created_time">创建时间:</string>
     <string name="about">关于</string>
-    <string name="verion_info">版本号: %s \n 设计者: 一个机器人</string>
+    <string name="verion_info">版本号: %s \n 设计者: 两个机器人</string>
 </resources>
