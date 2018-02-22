@@ -4,3 +4,5 @@
 
 vesion2是从vesion1分出来的分支，vesion1已经修改过了，如果要修改vesion2是不是要首先把vesion1的修改后的版本先拉过来？
 或者每个分支之间时独立的，相互之间没有影响？这是vesion2的第一次修改
+
+这是vesion2的第二次修改，在第一次修改后建立了vesion4，经过这次修改查看vesion2和master在透视图中版本之间的逻辑关系。
