@@ -1,2 +1,6 @@
 # mediaPlayer_test
 通过这个app学会使用github
+
+
+vesion2是从vesion1分出来的分支，vesion1已经修改过了，如果要修改vesion2是不是要首先把vesion1的修改后的版本先拉过来？
+或者每个分支之间时独立的，相互之间没有影响？这是vesion2的第一次修改
