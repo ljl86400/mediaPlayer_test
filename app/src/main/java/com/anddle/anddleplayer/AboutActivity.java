@@ -42,6 +42,8 @@ public class AboutActivity extends AppCompatActivity {
         //如果不是空的，则version=info.versionName
 
         String msg = String.format(getString(R.string.verion_info), version);
+        //字符串变量msg引用，string.format是占位符
+        // 占位符的使用见http://blog.csdn.net/qq_25925973/article/details/54407994
 
         TextView ver = (TextView) findViewById(R.id.version_info);
         ver.setText(msg);
