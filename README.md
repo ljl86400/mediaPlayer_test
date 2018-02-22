@@ -12,3 +12,4 @@ vesion2是从vesion1分出来的分支，vesion1已经修改过了，如果要�
 
 已经将master中的commit全部合并到vesion3中，现在修改vesion3的文本，然后合并到master中，几乎可以确认pull request中箭头的起点是目标分支，如master指向vesion3，则代表将vesion3的改动合并到master中，这个逻辑很有意思。
 
+上面vesion3中改动，无法新建从merge vesion3 into master的request，现在新建一个commit重新试一下
