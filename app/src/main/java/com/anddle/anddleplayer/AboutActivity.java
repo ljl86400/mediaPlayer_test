@@ -14,7 +14,7 @@ public class AboutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        //onCreate方法继承父类AppCompatActivity中的onCreat方法，传入参数为‘savedInstanceState’
+        //onCreate方法继承父类AppCompatActivity中的onCreate方法，传入参数为‘savedInstanceState’
         //onCreate创建一个以savedInstanceState为传入参数的activity
         super.onCreate(savedInstanceState);
 
@@ -52,7 +52,7 @@ public class AboutActivity extends AppCompatActivity {
         //实际上就是让ver引用R.id.version_info代表的view
         TextView ver = (TextView) findViewById(R.id.version_info);
 
-        //调用ver.setText的方法，将msg（也就是R.string.verion_info）的信息传递给ver相应的域
+        //调用ver.setText的方法，将msg（也就是R.string.version_info）的信息传递给ver相应的域
         ver.setText(msg);
     }
 
