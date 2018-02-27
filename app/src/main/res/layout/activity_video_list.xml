@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--ListView也是XML种一个关键的组件，作用是生成一个列表形式的视图，这个activity_video_list
+目的是用来安排视频列表界面的结构-->
+<!--tools可以告诉Android Studio，哪些属性在运行的时候是被忽略的，只在设计布局的时候有效。
+要让context属性只在布局预览中有效可以:tools:context=""-->
+<!--xmlns:tools 设置tools的命名空间-->
 <ListView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
