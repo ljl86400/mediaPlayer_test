@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--FrameLayout设置帧布局的特性，帧布局中有VideoView-->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -16,53 +17,33 @@
             android:id="@+id/video_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
-
     </FrameLayout>
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_margin="10dp">
+    <!--设置一个按键的布局，里面包含四行按键，每行里面有两个按键-->
+    <TableLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_margin="10dp">
 
+        <!--第一行，视频名称-->
         <TableRow>
-
-            <TextView
-                android:text="@string/video_name"/>
-
-            <TextView
-                android:id="@+id/video_title"/>
-
+            <TextView android:text="@string/video_name"/>
+            <TextView android:id="@+id/video_title"/>
         </TableRow>
 
+        <!--第二行，视频的尺寸-->
         <TableRow>
-
-            <TextView
-                android:text="@string/video_width_height"/>
-
-            <TextView
-                android:id="@+id/video_width_height"/>
-
+            <TextView android:text="@string/video_width_height"/>
+            <TextView android:id="@+id/video_width_height"/>
         </TableRow>
 
+        <!--第三行，视频文件的大小-->
         <TableRow>
-
-            <TextView
-                android:text="@string/video_size"/>
-
-            <TextView
-                android:id="@+id/video_size"/>
-
+            <TextView android:text="@string/video_size"/>
+            <TextView android:id="@+id/video_size"/>
         </TableRow>
 
+        <!--第四行，视频的创建时间-->
         <TableRow>
-
-            <TextView
-                android:text="@string/created_time"/>
-
-            <TextView
-                android:id="@+id/video_create_time"/>
-
+            <TextView android:text="@string/created_time"/>
+            <TextView android:id="@+id/video_create_time"/>
         </TableRow>
     </TableLayout>
 

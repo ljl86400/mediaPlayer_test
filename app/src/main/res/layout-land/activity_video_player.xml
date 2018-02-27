@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--FrameLayout(帧布局)可以说是六大布局中最为简单的一个布局,这个布局直接在
+屏幕上开辟出一块空白的区域,当我们往里面添加控件的时候,会默认把他们放到这块
+区域的左上角,而这种布局方式却没有任何的定位方式,所以它应用的场景并不多;帧布
+局的大小由控件中最大的子控件决定,如果控件的大小一样大的话,那么同一时刻就只能
+看到最上面的那个组件!后续添加的控件会覆盖前一个!虽然默认会将控件放置在左上角,
+但是我们也可以通过layout_gravity属性,指定到其他的位置!-->
+<!--关于帧布局讲解的比价好的网址：
+http://www.runoob.com/w3cnote/android-tutorial-framelayout.html-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,43 +20,23 @@
         android:layout_margin="10dp">
 
         <TableRow>
-
-            <TextView
-                android:text="@string/video_name"/>
-
-            <TextView
-                android:id="@+id/video_title"/>
-
+            <TextView android:text="@string/video_name"/>
+            <TextView android:id="@+id/video_title"/>
         </TableRow>
 
         <TableRow>
-
-            <TextView
-                android:text="@string/video_width_height"/>
-
-            <TextView
-                android:id="@+id/video_width_height"/>
-
+            <TextView android:text="@string/video_width_height"/>
+            <TextView android:id="@+id/video_width_height"/>
         </TableRow>
 
         <TableRow>
-
-            <TextView
-                android:text="@string/video_size"/>
-
-            <TextView
-                android:id="@+id/video_size"/>
-
+            <TextView android:text="@string/video_size"/>
+            <TextView  android:id="@+id/video_size"/>
         </TableRow>
 
         <TableRow>
-
-            <TextView
-                android:text="@string/created_time"/>
-
-            <TextView
-                android:id="@+id/video_create_time"/>
-
+            <TextView android:text="@string/created_time"/>
+            <TextView android:id="@+id/video_create_time"/>
         </TableRow>
     </TableLayout>-->
 
