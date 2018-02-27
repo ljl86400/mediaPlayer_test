@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--LinearLayout描述这个名为activity_about的activity的界面结构
+xmlns：属性可以在文档中定义一个或多个可供选择的命名空间
+命名空间：即名字空间，是指标识符的各种可见范围，也可以理解为一个语法文件
+，规定了哪些语法关键词可以使用，那些不可以使用。-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--定义一个文本视图的特性，如文本视图在界面中垂直方向上的位置，
+    文本视图的宽度和高度，以及文本视图的id或者内容-->
     <TextView
         android:gravity="center"
         android:layout_width="match_parent"
