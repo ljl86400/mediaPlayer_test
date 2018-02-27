@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--设置一个视图，用来显示视频的相关信息，其中包括视频的缩略图，并在缩略图的下边分两行
+显示视频相关的信息-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--ImageView也就是图像视图，用于在屏幕中显示任何的Drawable对象，通常用来显示图片
+    ,此处用来显示缩略图，定义了缩略图的来源、宽度、高度、显示方式、与边界的距离，背景
+    颜色等-->
     <ImageView
         android:id="@+id/vidoe_thumb"
         android:layout_width="150dp"
@@ -13,11 +19,13 @@
         android:layout_margin="5dp"
         android:background="@color/colorPrimary"/>
 
+    <!--设置一个子视图用来显示视频相关的信息-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--视频的名字，高度占子视图的1/3-->
         <TextView
             android:id="@+id/video_title"
             android:layout_width="match_parent"
@@ -28,6 +36,7 @@
             android:lines="2"
             android:layout_weight="2"/>
 
+        <!--显示视频的相关数据信息，高度占子视图的1/3-->
         <TextView
             android:id="@+id/video_date"
             android:layout_width="match_parent"
