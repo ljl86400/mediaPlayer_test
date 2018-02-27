@@ -10,6 +10,6 @@
     <string name="video_width_height">Video size:</string>
     <string name="video_size">Video file size:</string>
     <string name="created_time">Create Time:</string>
-    <string name="about">About</string>
+    <string name="About">video_info</string>
     <string name="verion_info">Version: %s \n Designer: Shawn.lee</string>
 </resources>

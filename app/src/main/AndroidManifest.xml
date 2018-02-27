@@ -2,43 +2,49 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.anddle.anddleplayer">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!--允许访问外部存储器-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+    <!--xml文件描述整个安卓项目的结构，像在名字为 AnddlePlayer 的application结构中包含了
+    名字为videolistactivity、videoplayer、aboutactivity三个组件，就像大括号里面包含了好几层
+    小括号一样，关于结构的描述是嵌套的，外面的大括号是父模块，每个小括号里面包含了子模块-->
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
 
-        <activity android:name=".VideoListActivity"
-            android:configChanges="orientation|screenSize">
+        <!--这一块是第一个子模块，描述的是名字为videolistactivity的activity的一些特性设置-->
+        <activity android:name=".VideoListActivity" android:configChanges="orientation|screenSize">
+
+            <!--IntentFilter就是用于描述intent的各种属性,Android中提供了Intent机制来协助应用间的交互
+            与通讯，Intent负责对应用中一次操作的动作、动作涉及数据、附加数据进行描述，Android则根据
+            此Intent的描述，负责找到对应的组件，将 Intent传递给调用的组件，并完成组件的调用。
+            http://blog.csdn.net/cnnumen/article/details/8464786-->
             <intent-filter>
 
                 <!--action节点中的android.intent.action.MAIN表明它所在的VideoListActivity是整个应用程序的入口点.-->
                 <!--这样整个安卓程序就不需要在java里面单独写main方法-->
+                <!--Action:使用android:name特性来指定对响应的动作名-->
                 <action android:name="android.intent.action.MAIN" />
 
                 <!--而category中的android.intent.category.LAUNCHER意思是把这个VideoListActivity归属到加载器类,
                 即把这个VideoListActivity标注为自动会加载和启动的VideoListActivity,这样程序启动时候就先加载这
                 个VideoListActivity-->
+                <!--category（类别）:被执行动作的附加信息-->
                 <category android:name="android.intent.category.LAUNCHER" />
-                
             </intent-filter>
         </activity>
 
+        <!--这是app的第二个activity模块，名字是videoplayer，里面包含了关于videoplayer的一些描述设置-->
         <activity android:name=".VideoPlayer">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-                <data
-                    android:mimeType="video/*"
-                    android:scheme="file" />
+
+                <!--Data就是执行动作要操作的数据-->
+                <data android:mimeType="video/*" android:scheme="file" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".AboutActivity"
-            android:label="@string/about"/>
+
+        <!--这是关于app第三个子模块，aboutactivity的描述，显示的标签是About-->
+        <activity android:name=".AboutActivity" android:label="@string/about"/>
     </application>
 
 </manifest>
