@@ -57,11 +57,22 @@ public class AboutActivity extends AppCompatActivity {
     }
 
     @Override
+    //定义一个boolean型的方法，返回值的类型是boolean型的：true|false
+    //传入参数是 MenuItem 型的 item，应该是一种枚举常量
     public boolean onOptionsItemSelected(MenuItem item) {
+
+        //switch语句执行到break结束，或者case都没有了就结束；如果存在default语句则意味着所
+        // 有case之外的情况都会执行default后面的语句
         switch (item.getItemId()) {
+            // 这个条件语句意味着 如果item.getItemId这个方法取得的android.R.id.home，则调用this.finish()
             case android.R.id.home:
                 this.finish();
+            //其他的任何情况都按照以下语句执行。
             default:
+                //父类方法onOptionsItemSelected()是处理菜单被选中运行后的事件
+                //返回值意思：
+                //true表示该方法执行完毕后，点击事件不会再向下一个事件处理方法传递了。
+                //false表示执行完该方法后，点击事件继续向下传递。
                 return super.onOptionsItemSelected(item);
         }
     }
